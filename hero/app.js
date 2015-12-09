@@ -62,16 +62,10 @@ $(function() {
 
 
 
-    // snapshot position of every object on the page along with 
-    // 
-
-
     setInterval(function() {
 
         var randomNumber = Math.floor(Math.random() * 900 + 1);
-
         var enemy = "<div class='enemy'></div>";
-
 
         $("body").append(enemy)
 
@@ -113,7 +107,6 @@ $(function() {
 
 
         if (e.keyCode === 88) {
-            // dynamically create dom element and have it travel vertically
 
             var heroPos = $("#hero").offset();
             console.log(heroPos);
@@ -121,9 +114,6 @@ $(function() {
             $("body").append(bullet);
 
             $('body > .bullet:last').css({
-
-
-
                 "left": heroPos.left + 20,
                 "top": heroPos.top
             }).animate({
@@ -140,9 +130,6 @@ $(function() {
 
         }
     }
-
-
-
 
 
 
